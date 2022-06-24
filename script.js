@@ -37,7 +37,7 @@ var wrapper = document.querySelector("#wrapper");
 //create timer
 var secondsLeft = 80;
 var holdInterval = 0;
-var penalty = 5;
+var penalty = 8;
 var ulCreate = document.createElement("ul");
 
 timer.addEventListener("click", function () {
@@ -85,7 +85,7 @@ function compare(event) {
             score++;
             createDiv.textContent = "Correct!";
         } else {
-            secondsLeft == secondsLeft - penalty;
+            secondsLeft = secondsLeft - penalty;
             createDiv.textContent = "Wrong!";
         }
     }
